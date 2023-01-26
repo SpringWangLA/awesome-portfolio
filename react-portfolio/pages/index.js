@@ -7,6 +7,8 @@ import {
 } from 'react-icons/ai'
 import Image from 'next/image'
 import hoang from '../public/hoang-wave.png'
+import setting from '../public/setting.png'
+import code from '../public/code.png'
 
 export default function Home() {
   return (
@@ -55,7 +57,40 @@ export default function Home() {
           </div>
         </section>
         
-
+        <section>
+          <div>
+            <h3 className='text-3xl py-1'>My Experience</h3>
+            <p className='text-md py-2 leading-8 text-gray-800'>
+              I graduated from <span className='text-teal-500'>Bach Khoa University (Automation and Control engineering - Honor Program)</span>. 
+            </p>
+            <p className='text-md py-2 leading-8 text-gray-800'>
+              I worked at <span className='text-teal-500'>Intel Vietnam for 4 years</span> as a <span className='text-teal-500'>Senior Tester Engineer</span>. I built multiple SW stacks to support the production 
+              line such as PCS CE checker, marginal HW monitoring, etc. I solved a lot of quality issues related to Test program/HW within 
+              products. 
+            </p>
+            <p className='text-md py-2 leading-8 text-gray-800'>
+              From December 2022, I started working at <span className='text-teal-500'>Ampere Computing</span> as an <span className='text-teal-500'>Infrastructure Framework Engineer</span>, who is building 
+              full-stack web apps to manage platforms, beaker framework and API microservices to support the bussiness.
+            </p>
+          </div>
+          <div>
+            <div className='text-center shadow-lg p-10 rounded-xl my-10'>
+              <div className='relative mx-auto mt-20 w-20 h-20 overflow-hidden'>
+                <Image src={setting} />
+              </div>
+              <h3 className='text-lg font-medium pt-8 pb-2'>Structured Designs</h3>
+              <p className='py-2'>
+                Creating elegant system designs based on customer's demand following core 
+                design theory.
+              </p>
+              <h4 className='py-4 text-teal-600'>System Architecture that I use</h4>
+              <p className='text-gray-800 py-1'>MVVM</p>
+              <p className='text-gray-800 py-1'>MVC</p>
+              <p className='text-gray-800 py-1'>Microservices</p>
+              <p className='text-gray-800 py-1'>REST/RESTful API services</p>
+            </div>
+          </div>
+        </section>
 
       </main>
     </>
