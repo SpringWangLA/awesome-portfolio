@@ -9,8 +9,76 @@ import Image from 'next/image'
 import hoang from '../public/hoang-wave.png'
 import setting from '../public/setting.png'
 import code from '../public/code.png'
+import html from '../public/experience/html.png'
+import css from '../public/experience/css.png'
+import javascript from '../public/experience/javascript.png'
+import angularImage from '../public/experience/angular.png'
+import tailwind from '../public/experience/tailwind.png'
+import django from '../public/experience/django.png'
+import fastapi from '../public/experience/fastapi.png'
+import linux from '../public/experience/linux.png'
+import docker from '../public/experience/docker.png'
+
 
 export default function Home() {
+
+  const techs = [
+    {
+      id: 1,
+      src: html,
+      title: 'HTML',
+      style: 'shadow-orange-500'
+    },
+    {
+      id: 2,
+      src: css,
+      title: 'CSS',
+      style: 'shadow-blue-500'
+    },
+    {
+      id: 3,
+      src: javascript,
+      title: 'JavaScript',
+      style: 'shadow-yellow-500'
+    },
+    {
+      id: 4,
+      src: angularImage,
+      title: 'Angular',
+      style: 'shadow-red-500'
+    },
+    {
+      id: 5,
+      src: tailwind,
+      title: 'Tailwind',
+      style: 'shadow-sky-500'
+    },
+    {
+      id: 6,
+      src: django,
+      title: 'Django',
+      style: 'shadow-green-500'
+    },
+    {
+      id: 7,
+      src: fastapi,
+      title: 'FastApi',
+      style: 'shadow-teal-500'
+    },
+    {
+      id: 8,
+      src: linux,
+      title: 'CentOS Linux',
+      style: 'shadow-purple-500'
+    },
+    {
+      id: 9,
+      src: docker,
+      title: 'Docker',
+      style: 'shadow-blue-500'
+    }
+  ]
+
   return (
     <>
       <Head>
@@ -20,7 +88,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className='bg-white px-10'>
+      <main className='bg-white px-10 shadow-'>
         <section className='min-h-screen'>
           <nav className='py-10 mb-12 flex justify-between'>
             <h1 className='text-xl font-burtons'>HOANG NGUYEN</h1>
@@ -56,20 +124,20 @@ export default function Home() {
             <Image src={hoang} layout='fill' objectFit='cover' />
           </div>
         </section>
-        
+
         <section>
           <div>
             <h3 className='text-3xl py-1'>My Experience</h3>
             <p className='text-md py-2 leading-8 text-gray-800'>
-              I graduated from <span className='text-teal-500'>Bach Khoa University (Automation and Control engineering - Honor Program)</span>. 
+              I graduated from <span className='text-teal-500'>Bach Khoa University (Automation and Control engineering - Honor Program)</span>.
             </p>
             <p className='text-md py-2 leading-8 text-gray-800'>
-              I worked at <span className='text-teal-500'>Intel Vietnam for 4 years</span> as a <span className='text-teal-500'>Senior Tester Engineer</span>. I built multiple SW stacks to support the production 
-              line such as PCS CE checker, marginal HW monitoring, etc. I solved a lot of quality issues related to Test program/HW within 
-              products. 
+              I worked at <span className='text-teal-500'>Intel Vietnam for 4 years</span> as a <span className='text-teal-500'>Senior Tester Engineer</span>. I built multiple SW stacks to support the production
+              line such as PCS CE checker, marginal HW monitoring, etc. I solved a lot of quality issues related to Test program/HW within
+              products.
             </p>
             <p className='text-md py-2 leading-8 text-gray-800'>
-              From December 2022, I started working at <span className='text-teal-500'>Ampere Computing</span> as an <span className='text-teal-500'>Infrastructure Framework Engineer</span>, who is building 
+              From December 2022, I started working at <span className='text-teal-500'>Ampere Computing</span> as an <span className='text-teal-500'>Infrastructure Framework Engineer</span>, who is building
               full-stack web apps to manage platforms, beaker framework and API microservices to support the bussiness.
             </p>
           </div>
@@ -80,7 +148,7 @@ export default function Home() {
               </div>
               <h3 className='text-lg font-medium pt-8 pb-2'>Structured Designs</h3>
               <p className='py-2'>
-                Creating elegant system designs based on customer's demand following core 
+                Creating elegant system designs based on customer's demand following core
                 design theory.
               </p>
               <h4 className='py-4 text-teal-600'>System Architecture that I use</h4>
@@ -89,9 +157,52 @@ export default function Home() {
               <p className='text-gray-800 py-1'>Microservices</p>
               <p className='text-gray-800 py-1'>REST/RESTful API services</p>
             </div>
+            <div className='text-center shadow-lg p-10 rounded-xl my-10'>
+              <div className='relative mx-auto mt-20 w-20 h-20 overflow-hidden'>
+                <Image src={code} />
+              </div>
+              <h3 className='text-lg font-medium pt-8 pb-2'>Structured Designs</h3>
+              <p className='py-2'>
+                Creating elegant system designs based on customer's demand following core
+                design theory.
+              </p>
+              <h4 className='py-4 text-teal-600'>Programming tech pack that I use</h4>
+              <p className='text-gray-800 py-1'>Python</p>
+              <p className='text-gray-800 py-1'>ASP.NET</p>
+              <p className='text-gray-800 py-1'>Javascript</p>
+              <p className='text-gray-800 py-1'>HTML/CSS/Tailwind CSS</p>
+            </div>
           </div>
         </section>
+        {/* Portfolio */}
+        <section>
+          <div>
+            <h3 className='text-3xl py-1'>Portfolio</h3>
+          </div>
+        </section>
+        {/* Experience */}
+        <section>
+          <div>
+            <h3 className='text-3xl py-1'>Experience</h3>
+            <h4 className='py-4 text-teal-600'>These are the technologies I've worked with</h4>
+          </div>
+          <div className='shadow-lg p-10 rounded-xl my-2 flex flex-col
+          justify-center w-full'>
 
+            <div className='w-full grid grid-cols-2 sm:grid-cols-3
+            gap-8 text-center py-8 px-12 sm:px-0'>
+              {techs.map(({ id, src, title, style }) => (
+                <div 
+                  key={id}
+                  className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}>
+                  <Image src={src} className='w-20 mx-auto' />
+                  <p className='mt-4'>{title}</p>
+                </div>
+              ))}
+
+            </div>
+          </div>
+        </section>
       </main>
     </>
   )
