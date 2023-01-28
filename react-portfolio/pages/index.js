@@ -88,7 +88,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className='bg-white px-10 shadow-'>
+      <main className='bg-white px-10 md:px-20 lg:px-40'>
         <section className='min-h-screen'>
           <nav className='py-10 mb-12 flex justify-between'>
             <h1 className='text-xl font-burtons'>HOANG NGUYEN</h1>
@@ -104,13 +104,13 @@ export default function Home() {
             </ul>
           </nav>
           <div className='text-center p-10'>
-            <h2 className='text-5xl py-2 text-teal-600 font-medium'>
+            <h2 className='text-5xl py-2 text-teal-600 font-medium md:text-6xl'>
               Nguyen Xuan Hoang
             </h2>
-            <h3 className='text-2xl py-2'>
+            <h3 className='text-2xl py-2 md:text-3xl'>
               Full-stack developer / Platform validation engineer
             </h3>
-            <p className='text-md py-5 leading-8 text-gray-800'>
+            <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto'>
               An engineer who provides web services for programming, design content needs and
               platform validation. Join me down below and let's get started!
             </p>
@@ -120,7 +120,8 @@ export default function Home() {
             <AiFillLinkedin />
             <AiFillMail />
           </div>
-          <div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden'>
+          <div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden
+          md:h-96 md:w-96'>
             <Image src={hoang} layout='fill' objectFit='cover' />
           </div>
         </section>
@@ -141,7 +142,7 @@ export default function Home() {
               full-stack web apps to manage platforms, beaker framework and API microservices to support the bussiness.
             </p>
           </div>
-          <div>
+          <div className='lg:flex gap-10'>
             <div className='text-center shadow-lg p-10 rounded-xl my-10'>
               <div className='relative mx-auto mt-20 w-20 h-20 overflow-hidden'>
                 <Image src={setting} />
